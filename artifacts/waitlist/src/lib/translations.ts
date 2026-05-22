@@ -5,7 +5,7 @@ export const t = {
     heroTitle1: "Welcome to",
     heroTitle2: "Hikma",
     heroSubtitle:
-      "Journey across the world of the Islamic Golden Age, seek knowledge, debate rivals, and navigate the ever-present dangers of an empire on the brink.",
+      "Journey across the world of the Islamic Golden Age. Seek knowledge, forge wisdom, and secure your legacy in an empire on the brink.",
     heroCta: "Begin Your Journey",
 
     statsMinutes: "Minutes",
@@ -14,21 +14,21 @@ export const t = {
 
     pillarsTitle1: "The House of Wisdom",
     pillarsDesc1:
-      "Bayt al-Hikma in Baghdad stands as a beacon of knowledge: scholars, translators, mathematicians, physicians, and astronomers gather to exchange ideas and push the boundaries of human understanding.",
+      "Bayt al-Hikma in Baghdad stands as a beacon of knowledge: scholars, translators, and scientists gather to exchange ideas, preserve manuscripts, and push the boundaries of human knowledge.",
     pillarsTitle2: "Journey the World",
     pillarsDesc2:
       "Travel between the great cities of the medieval world, gathering Knowledge from distant lands and returning to Baghdad to transform your discoveries into Wisdom — before the storm reaches the gates.",
     pillarsTitle3: "Secure Your Legacy",
     pillarsDesc3:
-      "Debate rivals, outmaneuver opponents, and complete your masterwork before history is lost to the flames. Every decision counts — will you cement your place among the greats, or be forgotten?",
+      "Race against time to complete your grand masterwork before the advancing armies reach the gates. Every decision counts — will you preserve your discoveries and cement your place in history, or will your life's work be lost to the flames?",
 
     quote: "\u201cThe ink of the scholar is more sacred than the blood of the martyr.\u201d",
     quoteBody:
-      "Manuscripts from across the world flow into the halls of Bayt al-Hikma, enriching a legacy of science and discovery. But a storm is brewing on the horizon \u2014 and the greatest threat to knowledge is not ignorance, but the armies that silence it.",
+      "Manuscripts from across the world flow into the halls of Bayt al-Hikma, enriching a legacy of science and discovery. But a storm is brewing on the horizon.",
 
     waitlistTitle: "The House of Wisdom Awaits",
     waitlistBlurb:
-      "Join the inner circle of scholars. Be the first to know when the campaign launches and receive exclusive artisan components.",
+      "Join the inner circle of scholars. Be the first to know when Hikma launches.",
     waitlistCount1: "scholar has already joined.",
     waitlistCountN: "scholars have already joined.",
     placeholderName: "Your Name",
@@ -55,7 +55,7 @@ export const t = {
     footerDesign: "Game Design",
     footerIllustration: "Illustration",
     footerShare: "Share",
-    footerCopy: "Hikma Board Game. All rights reserved.",
+    footerCopy: "2026 Hikma. All rights reserved.",
 
     langToggle: "العربية",
   },
