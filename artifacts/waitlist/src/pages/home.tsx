@@ -226,7 +226,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
       {/* Quote Section */}
       <section className="py-32 px-6 bg-background relative">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <p className="text-3xl md:text-5xl font-serif italic text-foreground leading-tight text-balance">
+          <p className="text-xl md:text-3xl font-serif italic text-foreground leading-tight text-balance">
             {tx.quote}
           </p>
           <div className="w-24 h-px bg-primary/40 mx-auto" />
