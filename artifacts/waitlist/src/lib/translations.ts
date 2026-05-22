@@ -20,11 +20,11 @@ export const t = {
       "Travel between the great cities of the medieval world, gathering Knowledge from distant lands and returning to Baghdad to transform your discoveries into Wisdom — before the storm reaches the gates.",
     pillarsTitle3: "Secure Your Legacy",
     pillarsDesc3:
-      "Race against time to complete your grand masterwork before the advancing armies reach the gates. Every decision counts — will you preserve your discoveries and cement your place in history, or will your life's work be lost to the flames?",
+      "Race against time to complete your grand masterwork before the advancing armies reach the gates.",
 
-    quote: "\u201cThe ink of the scholar is more sacred than the blood of the martyr.\u201d",
+    quote: "\u201cIt is the pole of the world, the navel of the earth, and the City of Peace. There is no one possessing knowledge, or insight who does not look toward it and desire to dwell within it.\u201d",
     quoteBody:
-      "Manuscripts from across the world flow into the halls of Bayt al-Hikma, enriching a legacy of science and discovery. But a storm is brewing on the horizon.",
+      "Manuscripts from across the world flow into the halls of Bayt al-Hikma, enriching a legacy of science and discovery, but a storm is brewing on the horizon. Every decision counts — will you preserve your discoveries and cement your place in history, or will your life's work be lost to the flames?",
 
     waitlistTitle: "The House of Wisdom Awaits",
     waitlistBlurb:
@@ -80,7 +80,7 @@ export const t = {
     pillarsDesc3:
       "ناظر المنافسين، وأفلت من خطط خصومك، وأتمم تحفتك الكبرى قبل أن يلتهم النسيانُ التاريخَ. كل قرار يُحسب — هل ستُخلّد اسمك بين العظماء، أم تُطوى في طيات النسيان؟",
 
-    quote: "«حبر العالم أقدس من دم الشهيد.»",
+    quote: "«هِيَ قُطْبُ الدُّنْيَا، وَسُرَّةُ الْأَرْضِ، وَمَدِينَةُ السَّلَامِ... لَيْسَ لِأَحَدٍ مِنَ الْعِلْمِ وَالْأَدَبِ وَالْفِقْهِ وَالنَّظَرِ إِلَّا وَهُوَ يَتَطَلَّعُ إِلَيْهَا، وَيَرْغَبُ فِي سُكْنَاهَا»",
     quoteBody:
       "تتدفق المخطوطات من أرجاء العالم إلى قاعات بيت الحكمة، لتُثري إرثاً خالداً من العلم والاكتشاف. لكن عاصفة تتشكّل في الأفق — وأعظم تهديد للمعرفة ليس الجهلَ، بل الجيوش التي تُسكتها.",
 
