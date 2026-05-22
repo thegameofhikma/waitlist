@@ -55,37 +55,45 @@ export default function Home() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    joinWaitlist.mutate(
-      { data: values },
-      {
-        onSuccess: () => {
-          setHasJoined(true);
-          queryClient.invalidateQueries({
-            queryKey: getGetWaitlistCountQueryKey(),
-          });
-          toast({
-            title: tx.toastSuccessTitle,
-            description: tx.toastSuccessDesc,
-          });
+async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      // Create a fake loading state while sending data to Google Sheets
+      const submitButton = document.querySelector('[data-testid="button-submit-waitlist"]');
+      if (submitButton) submitButton.setAttribute("disabled", "true");
+
+      const response = await fetch("https://api.sheetmonkey.io/form/sC9m4YvmsTzMLy1u1aDnaU", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
         },
-        onError: (error: any) => {
-          if (error.response?.status === 409) {
-            toast({
-              title: tx.toastDupeTitle,
-              description: tx.toastDupeDesc,
-              variant: "destructive",
-            });
-          } else {
-            toast({
-              title: tx.toastErrorTitle,
-              description: tx.toastErrorDesc,
-              variant: "destructive",
-            });
-          }
-        },
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          country: values.country,
+          date: new Date().toLocaleDateString()
+        })
+      });
+
+      if (response.ok) {
+        setHasJoined(true);
+        toast({
+          title: tx.toastSuccessTitle,
+          description: tx.toastSuccessDesc,
+        });
+      } else {
+        throw new Error("Sheet Monkey connection failed");
       }
-    );
+    } catch (error) {
+      console.error("Submission error:", error);
+      toast({
+        title: tx.toastErrorTitle,
+        description: tx.toastErrorDesc,
+        variant: "destructive",
+      });
+    } finally {
+      const submitButton = document.querySelector('[data-testid="button-submit-waitlist"]');
+      if (submitButton) submitButton.removeAttribute("disabled");
+    }
   }
 
   return (
