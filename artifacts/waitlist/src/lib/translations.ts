@@ -20,7 +20,7 @@ export const t = {
       "Travel between the great cities of the medieval world, gathering Knowledge from distant lands and returning to Baghdad to transform your discoveries into Wisdom — before the storm reaches the gates.",
     pillarsTitle3: "Secure Your Legacy",
     pillarsDesc3:
-      "Race against time to complete your grand masterwork before the advancing armies reach the gates.",
+      "Race against time to complete your grand masterwork before the advancing Mongol armies reach the capital.",
 
     quote: "\u201cIt is the pole of the world, the navel of the earth, and the City of Peace. There is no one possessing knowledge, or insight who does not look toward it and desire to dwell within it.\u201d",
     quoteBody:
@@ -48,7 +48,7 @@ export const t = {
     toastCopiedTitle: "Link copied!",
     toastCopiedDesc: "Share it with fellow scholars.",
 
-    shareTitle: "Hikma \u2014 The Board Game",
+    shareTitle: "Hikma \u2014 The Board Game inspired by the Islmaic Golden Age",
     shareText:
       "Journey across the Islamic Golden Age in this beautifully crafted board game. Join the waitlist!",
 
@@ -63,7 +63,7 @@ export const t = {
     heroTitle1: "مرحباً بكم في",
     heroTitle2: "حكمة",
     heroSubtitle:
-      "سافر عبر عالم العصر الذهبي الإسلامي، وابحث عن المعرفة، وناظر المنافسين، وتعامل مع الأخطار الدائمة لإمبراطورية على حافة الهاوية.",
+      "ارتحل في عالم العصر الذهبي الإسلامي. ابحث عن المعرفة، صُغ الحكمة، وحافظ على إرثك من الزوال!",
     heroCta: "ابدأ رحلتك",
 
     statsMinutes: "دقيقة",
@@ -72,21 +72,21 @@ export const t = {
 
     pillarsTitle1: "بيت الحكمة",
     pillarsDesc1:
-      "يقف بيت الحكمة في بغداد منارةً للعلم؛ يجتمع فيه العلماء والمترجمون والرياضيون والأطباء وعلماء الفلك لتبادل الأفكار ودفع حدود الفهم البشري.",
+      "يقف بيت الحكمة في بغداد منارةً للعلم، حيث يجتمع طالبو العلم مع المترجمين والعلماء لتبادل الأفكار، دراسة المخطوطات، وتوسعة حدود المعرفة الإنسانية. ",
     pillarsTitle2: "سافر حول العالم",
     pillarsDesc2:
-      "انطلق بين مدن العالم الوسيط العظيمة، واجمع المعرفة من أصقاع بعيدة، ثم عُد إلى بغداد لتحوّل اكتشافاتك إلى حكمة — قبل أن تبلغ العاصفة الأبواب.",
+      "تنقّل بين أعظم مدن العصور القديمة، اجمع العلم من أصقاع الأرض وعد إلى بغداد لتجد الحكمة، قبل أن تصل العاصفة إلى الأبواب!",
     pillarsTitle3: "أرسّخ إرثك",
     pillarsDesc3:
-      "ناظر المنافسين، وأفلت من خطط خصومك، وأتمم تحفتك الكبرى قبل أن يلتهم النسيانُ التاريخَ. كل قرار يُحسب — هل ستُخلّد اسمك بين العظماء، أم تُطوى في طيات النسيان؟",
+      "تسابق مع الزمن لتكمل بحثك العظيم قبل أن تصل جيوش الغزاة المغول إلى العاصمة!",
 
     quote: "«هِيَ قُطْبُ الدُّنْيَا، وَسُرَّةُ الْأَرْضِ، وَمَدِينَةُ السَّلَامِ... لَيْسَ لِأَحَدٍ مِنَ الْعِلْمِ وَالْأَدَبِ وَالْفِقْهِ وَالنَّظَرِ إِلَّا وَهُوَ يَتَطَلَّعُ إِلَيْهَا، وَيَرْغَبُ فِي سُكْنَاهَا»",
     quoteBody:
-      "تتدفق المخطوطات من أرجاء العالم إلى قاعات بيت الحكمة، لتُثري إرثاً خالداً من العلم والاكتشاف. لكن عاصفة تتشكّل في الأفق — وأعظم تهديد للمعرفة ليس الجهلَ، بل الجيوش التي تُسكتها.",
+      "تدفق المخطوطات من أرجاء العالم إلى قاعات بيت الحكمة، لتُثري إرثاً خالداً من العلم والاكتشاف. لكن عاصفة تتشكّل في الأفق. كل قرارٍ وله عواقبه - هل ستحافظ على اكتشافاتك وترسّخ مكانتك في التاريخ، أم سيضيع عملك بين ألسنة اللهب؟",
 
     waitlistTitle: "بيت الحكمة ينتظرك",
     waitlistBlurb:
-      "انضم إلى الدائرة الداخلية من العلماء. كن أول من يعلم حين تنطلق الحملة، واحصل على مكوّنات حرفية حصرية.",
+      "كن من نخبة أهل العلم، وكن أول من يعلم عند انطلاق «حِكمة»",
     waitlistCount1: "عالم واحد انضم بالفعل.",
     waitlistCountN: "عالم انضموا بالفعل.",
     placeholderName: "اسمك",
@@ -106,7 +106,7 @@ export const t = {
     toastCopiedTitle: "تم نسخ الرابط!",
     toastCopiedDesc: "شاركه مع زملائك العلماء.",
 
-    shareTitle: "حكمة — لعبة الطاولة",
+    shareTitle: "حكمة — لعبة الطاولة المستوحاة من العصر الذهبي الإسلامي",
     shareText: "سافر عبر العصر الذهبي الإسلامي في لعبة طاولة مصنوعة بعناية. انضم إلى قائمة الانتظار!",
 
     footerDesign: "تصميم اللعبة",
