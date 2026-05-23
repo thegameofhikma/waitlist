@@ -227,13 +227,13 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
       {/* Quote Section */}
       <section className="py-32 px-6 bg-background relative">
 
-      <div className="mx-auto w-36 md:w-48 h-auto mb-12 opacity-85 filter drop-shadow-[0_4px_6px_rgba(0,0,0,0.6)]">
-  <img 
-    src={dividerGraphic} 
-    alt="Decorative manuscript emblem" 
-    className="w-full h-full object-contain" 
-  />
-</div>
+      <div className="mx-auto w-56 md:w-72 h-auto mb-16 opacity-95 filter drop-shadow-[0_6px_10px_rgba(0,0,0,0.6)]">
+        <img 
+          src={dividerGraphic} 
+          alt="Decorative Baghdad icon" 
+          className="w-full h-full object-contain" 
+          />
+      </div>
 
         <div className="flex items-center justify-center gap-6 max-w-sm mx-auto mb-12 opacity-75">
           <div className="h-[2px] bg-gradient-to-r from-transparent to-[#C5A880] flex-1" />
