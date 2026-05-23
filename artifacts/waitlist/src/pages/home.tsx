@@ -20,6 +20,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import boxArt from "@assets/IMG-20260126-WA0001_1779350196491.jpg";
+import dividerGraphic from "@assets/baghdad-icon-transparent.png";
 import { CountryCombobox } from "@/components/country-combobox";
 import { t, type Lang } from "@/lib/translations";
 
@@ -225,6 +226,9 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
 
       {/* Quote Section */}
       <section className="py-32 px-6 bg-background relative">
+        <div className="mx-auto w-16 h-auto mb-6 opacity-70 filter drop-shadow">
+          <img src={dividerGraphic} alt="Decorative manuscript emblem" className="w-full h-full object-contain" />
+        </div>
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <p className="text-xl md:text-3xl font-serif italic text-foreground leading-tight text-balance">
             {tx.quote}
