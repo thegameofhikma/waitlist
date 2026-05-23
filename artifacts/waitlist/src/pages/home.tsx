@@ -227,7 +227,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
       {/* Quote Section */}
       <section className="py-32 px-6 bg-background relative">
 
-      <div className="mx-auto w-24 md:w-32 h-auto mb-10 opacity-80 filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+      <div className="mx-auto w-36 md:w-48 h-auto mb-12 opacity-85 filter drop-shadow-[0_4px_6px_rgba(0,0,0,0.6)]">
   <img 
     src={dividerGraphic} 
     alt="Decorative manuscript emblem" 
