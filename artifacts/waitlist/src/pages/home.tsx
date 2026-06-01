@@ -20,6 +20,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import boxArt from "@assets/IMG-20260126-WA0001_1779350196491.jpg";
+import bgImage from "@assets/map graphic.jpg";
 import dividerGraphic from "@assets/baghdad-icon-transparent.png";
 import { CountryCombobox } from "@/components/country-combobox";
 import { t, type Lang } from "@/lib/translations";
@@ -120,7 +121,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
       <section className="relative w-full min-h-[100vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <img
-            src={boxArt}
+            src={bgImage}
             alt="Hikma board game box art"
             className="w-full h-full object-cover object-top"
           />
