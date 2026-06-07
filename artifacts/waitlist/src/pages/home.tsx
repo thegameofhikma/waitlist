@@ -58,45 +58,54 @@ export default function Home() {
   });
 
 async function onSubmit(values: z.infer<typeof formSchema>) {
-    try {
-      // Create a fake loading state while sending data to Google Sheets
-      const submitButton = document.querySelector('[data-testid="button-submit-waitlist"]');
-      if (submitButton) submitButton.setAttribute("disabled", "true");
+  try {
+    // Create a loading state while sending data
+    const submitButton = document.querySelector('[data-testid="button-submit-waitlist"]');
+    if (submitButton) submitButton.setAttribute("disabled", "true");
 
-      const response = await fetch("https://api.sheetmonkey.io/form/sC9m4YvmsTzMLy1u1aDnaU", {
+    const payload = {
+      name: values.name,
+      email: values.email,
+      country: values.country,
+      date: new Date().toLocaleDateString()
+    };
+
+    // Fire BOTH requests simultaneously to save time
+    const [sheetMonkeyResponse, makeWebhookResponse] = await Promise.all([
+      fetch("https://api.sheetmonkey.io/form/sC9m4YvmsTzMLy1u1aDnaU", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          name: values.name,
-          email: values.email,
-          country: values.country,
-          date: new Date().toLocaleDateString()
-        })
-      });
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      }),
+      fetch("https://hook.eu1.make.com/lkygw1lf9mls99juiitiio2igwewaycy", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      })
+    ]);
 
-      if (response.ok) {
-        setHasJoined(true);
-        toast({
-          title: tx.toastSuccessTitle,
-          description: tx.toastSuccessDesc,
-        });
-      } else {
-        throw new Error("Sheet Monkey connection failed");
-      }
-    } catch (error) {
-      console.error("Submission error:", error);
+    // Check if both pipelines succeeded
+    if (sheetMonkeyResponse.ok && makeWebhookResponse.ok) {
+      setHasJoined(true);
       toast({
-        title: tx.toastErrorTitle,
-        description: tx.toastErrorDesc,
-        variant: "destructive",
+        title: tx.toastSuccessTitle,
+        description: tx.toastSuccessDesc,
       });
-    } finally {
-      const submitButton = document.querySelector('[data-testid="button-submit-waitlist"]');
-      if (submitButton) submitButton.removeAttribute("disabled");
+    } else {
+      throw new Error("One or more integration connections failed");
     }
+  } catch (error) {
+    console.error("Submission error:", error);
+    toast({
+      title: tx.toastErrorTitle,
+      description: tx.toastErrorDesc,
+      variant: "destructive",
+    });
+  } finally {
+    const submitButton = document.querySelector('[data-testid="button-submit-waitlist"]');
+    if (submitButton) submitButton.removeAttribute("disabled");
   }
+}
 
   return (
     <div
