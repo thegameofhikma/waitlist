@@ -64,25 +64,26 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
     if (submitButton) submitButton.setAttribute("disabled", "true");
 
     const payload = {
-      name: values.name,
-      email: values.email,
-      country: values.country,
-      date: new Date().toLocaleDateString()
+    name: values.name,
+    email: values.email,
+    country: values.country,
+    date: new Date().toLocaleDateString()
     };
 
     // Fire BOTH requests simultaneously to save time
     const [sheetMonkeyResponse, makeWebhookResponse] = await Promise.all([
-      fetch("https://api.sheetmonkey.io/form/sC9m4YvmsTzMLy1u1aDnaU", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
-      }),
-      fetch("https://hook.eu1.make.com/lkygw1lf9mls99juiitiio2igwewaycy", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
-      })
-    ]);
+  fetch("https://api.sheetmonkey.io/form/sC9m4YvmsTzMLy1u1aDnaU", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+    }),
+  fetch("https://hook.eu1.make.com/lkygw1lf9mls99juiitiio2igwewaycy", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    // MAKE SURE THIS IS EXACTLY LIKE THIS:
+    body: JSON.stringify(payload) 
+    })
+  ]);
 
     // Check if both pipelines succeeded
     if (sheetMonkeyResponse.ok && makeWebhookResponse.ok) {
