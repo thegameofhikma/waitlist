@@ -2,7 +2,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { ArrowRight, BookOpen, Compass, Sparkles, Clock, Users, Star, Share2, Instagram } from "lucide-react";
+import { ArrowRight, BookOpen, Compass, Sparkles, Clock, Users, Star, Share2, Instagram, Tiktok } from "lucide-react";
 import {
   useJoinWaitlist,
   useGetWaitlistCount,
@@ -370,15 +370,29 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-6 text-center">
           <div className="flex items-center gap-4">
             <a
-              href="https://www.instagram.com/thegameofhikma"
+              href="https://www.instagram.com/playhikma"
               target="_blank"
               rel="noopener noreferrer"
               data-testid="link-instagram"
               className="flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-card text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 text-sm"
             >
               <Instagram className="w-4 h-4" />
-              <span>@thegameofhikma</span>
+              <span>@playhikma</span>
             </a>
+
+      {/* TikTok Button */}
+            <a
+              href="https://www.tiktok.com/@playhikma" // Swap with your actual TikTok handle URL
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="link-tiktok"
+              className="flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-card text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 text-sm"
+            >
+              <Tiktok className="w-4 h-4" />
+              <span>@playhikma</span>
+            </a>
+
+
             <button
               data-testid="button-share"
               onClick={() => {
