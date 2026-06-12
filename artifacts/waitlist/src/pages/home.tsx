@@ -2,7 +2,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { ArrowRight, BookOpen, Compass, Sparkles, Clock, Users, Star, Share2, Instagram, Tiktok } from "lucide-react";
+import { ArrowRight, BookOpen, Compass, Sparkles, Clock, Users, Star, Share2, Instagram} from "lucide-react";
 import {
   useJoinWaitlist,
   useGetWaitlistCount,
@@ -388,7 +388,13 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
               data-testid="link-tiktok"
               className="flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-card text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 text-sm"
             >
-              <Tiktok className="w-4 h-4" />
+              <svg 
+                className="w-4 h-4 fill-current" 
+                viewBox="0 0 24 24" 
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.94 1.14 2.27 1.93 3.71 2.24v3.91c-1.39-.08-2.74-.63-3.83-1.52-.64-.52-1.17-1.17-1.56-1.9v6.94c.03 2.58-1.12 5.1-3.13 6.74-2.22 1.87-5.4 2.33-8.08 1.15-2.82-1.19-4.73-4.14-4.63-7.2.04-3.55 3.03-6.64 6.6-6.63.95 0 1.88.22 2.73.63v4.03c-.63-.37-1.35-.57-2.08-.55-1.57.02-2.93 1.25-3.08 2.81-.22 2.05 1.5 3.86 3.53 3.71 1.48-.05 2.69-1.21 2.75-2.69.02-1.74.01-3.48.01-5.22V0z"/>
+              </svg>
               <span>@playhikma</span>
             </a>
 
