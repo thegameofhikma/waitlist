@@ -1,10 +1,6 @@
 {
-  "name": "Hikma — The Board Game",
-  "short_name": "Hikma",
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#1c1917",
-    "theme_color": "#1c1917",
+  "name": "MyWebSite",
+  "short_name": "MySite",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
