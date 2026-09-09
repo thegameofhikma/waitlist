@@ -180,7 +180,6 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
               )}
             </Button>
           </div>
-        </div>
       </section>
 
       {/* Game Stats Section */}
