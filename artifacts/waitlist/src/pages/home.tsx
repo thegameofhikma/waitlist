@@ -159,31 +159,30 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
           </p>
 
           <div className="pt-4">
-            <Button
-              data-testid="button-join-ledger"
-              size="lg"
-              className="h-14 px-8 text-lg rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 shadow-lg shadow-primary/30"
-              onClick={() => {
-                document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              {isAr ? (
-                <>
-                  <ArrowRight className="mr-2 w-5 h-5 rotate-180" />
-                  {tx.heroCta}
-                </>
-              ) : (
-                <>
-                  {tx.heroCta}
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </>
-              )}
-            </Button>
-          </div>
-        </div>
-      </section>
+        <Button
+          data-testid="button-join-ledger"
+          size="lg"
+          className="h-14 px-8 text-lg rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 shadow-lg shadow-primary/30"
+          onClick={() => {
+            document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          {isAr ? (
+            <>
+              <ArrowRight className="mr-2 w-5 h-5 rotate-180" />
+              {tx.heroCta}
+            </>
+          ) : (
+            <>
+              {tx.heroCta}
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </>
+          )}
+        </Button>
+      </div>
+  </section>
 
-      {/* Game Stats Section */}
+  {/* Game Stats Section */}
       <section className="py-16 px-6 bg-background border-b border-border">
         <div className="max-w-3xl mx-auto grid grid-cols-3 gap-6 text-center">
           <div className="flex flex-col items-center gap-3 p-6 rounded-xl border border-primary/20 bg-card">
