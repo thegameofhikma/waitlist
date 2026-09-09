@@ -80,7 +80,7 @@
   --foreground: 40 55% 90%;
   --border: 32 30% 18%;
   --input: 32 28% 22%;
-  --ring: 42 85% 52%;
+  --ring: 6 40% 30%;
 
   /* Cards: slightly lighter warm dark */
   --card: 28 35% 11%;
@@ -92,8 +92,8 @@
   --popover-border: 32 30% 18%;
 
   /* Primary: rich gold (the Hikma logo / owl colour) */
-  --primary: 42 85% 52%;
-  --primary-foreground: 28 40% 7%;
+  --primary: 6 40% 30%;
+  --primary-foreground: 40 55% 90%;
 
   /* Secondary: teal (scholar's robe accent) */
   --secondary: 178 45% 35%;
