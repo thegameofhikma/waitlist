@@ -166,7 +166,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
         <Button
           data-testid="button-join-ledger"
           size="lg"
-          className="h-14 px-8 text-lg rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 shadow-lg shadow-primary/30"
+          className="h-14 px-8 text-lg rounded-full bg-[#6a332d] hover:bg-[#582a25] text-primary-foreground transition-all duration-300 hover:scale-105 shadow-lg shadow-primary/30"
           onClick={() => {
             document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
           }}
