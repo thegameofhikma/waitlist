@@ -191,60 +191,64 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
   </section>
 
   {/* Game Stats Section */}
-      <section className="py-16 px-6 bg-background border-b border-border">
-        <div className="max-w-3xl mx-auto grid grid-cols-3 gap-6 text-center">
-          <div className="flex flex-col items-center gap-3 p-6 rounded-xl border border-primary/20 bg-card">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
-              <Clock className="w-6 h-6" />
-            </div>
-            <p className="text-2xl font-bold text-foreground">30–60</p>
-            <p className="text-sm text-muted-foreground uppercase tracking-widest">{tx.statsMinutes}</p>
-          </div>
-          <div className="flex flex-col items-center gap-3 p-6 rounded-xl border border-primary/20 bg-card">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
-              <Users className="w-6 h-6" />
-            </div>
-            <p className="text-2xl font-bold text-foreground">2–6</p>
-            <p className="text-sm text-muted-foreground uppercase tracking-widest">{tx.statsPlayers}</p>
-          </div>
-          <div className="flex flex-col items-center gap-3 p-6 rounded-xl border border-primary/20 bg-card">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
-              <Star className="w-6 h-6" />
-            </div>
-            <p className="text-2xl font-bold text-foreground">10+</p>
-            <p className="text-sm text-muted-foreground uppercase tracking-widest">{tx.statsYears}</p>
-          </div>
+  <section className="py-16 px-6 bg-[#1A120C] border-b border-[#C5A880]/20">
+    <div className="max-w-3xl mx-auto grid grid-cols-3 gap-6 text-center">
+      <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border-2 border-[#D4AF37]/40 bg-[#F5E8D0] shadow-xl text-[#2A1B12]">
+        <div className="w-12 h-12 rounded-full bg-[#6a332d]/10 flex items-center justify-center text-[#6a332d] border border-[#6a332d]/20">
+          <Clock className="w-6 h-6" />
         </div>
-      </section>
+        <p className="text-2xl font-bold text-[#6a332d]">30–60</p>
+        <p className="text-sm text-[#4A3525] font-semibold uppercase tracking-widest">{tx.statsMinutes}</p>
+      </div>
+
+      <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border-2 border-[#D4AF37]/40 bg-[#F5E8D0] shadow-xl text-[#2A1B12]">
+        <div className="w-12 h-12 rounded-full bg-[#6a332d]/10 flex items-center justify-center text-[#6a332d] border border-[#6a332d]/20">
+          <Users className="w-6 h-6" />
+        </div>
+        <p className="text-2xl font-bold text-[#6a332d]">2–6</p>
+        <p className="text-sm text-[#4A3525] font-semibold uppercase tracking-widest">{tx.statsPlayers}</p>
+      </div>
+
+      <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border-2 border-[#D4AF37]/40 bg-[#F5E8D0] shadow-xl text-[#2A1B12]">
+        <div className="w-12 h-12 rounded-full bg-[#6a332d]/10 flex items-center justify-center text-[#6a332d] border border-[#6a332d]/20">
+          <Star className="w-6 h-6" />
+        </div>
+        <p className="text-2xl font-bold text-[#6a332d]">10+</p>
+        <p className="text-sm text-[#4A3525] font-semibold uppercase tracking-widest">{tx.statsYears}</p>
+      </div>
+    </div>
+  </section>
 
       {/* Pillars Section */}
-      <section className="py-32 px-6 bg-card relative z-20 border-y border-border">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            <div className="space-y-4 p-6 group">
-              <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-500 border border-primary/20">
-                <BookOpen className="w-8 h-8" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground">{tx.pillarsTitle1}</h3>
-              <p className="text-muted-foreground leading-relaxed">{tx.pillarsDesc1}</p>
-            </div>
-            <div className="space-y-4 p-6 group">
-              <div className="w-16 h-16 mx-auto rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-secondary-foreground transition-colors duration-500 border border-secondary/20">
-                <Compass className="w-8 h-8" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground">{tx.pillarsTitle2}</h3>
-              <p className="text-muted-foreground leading-relaxed">{tx.pillarsDesc2}</p>
-            </div>
-            <div className="space-y-4 p-6 group">
-              <div className="w-16 h-16 mx-auto rounded-full bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-colors duration-500 border border-accent/20">
-                <Sparkles className="w-8 h-8" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground">{tx.pillarsTitle3}</h3>
-              <p className="text-muted-foreground leading-relaxed">{tx.pillarsDesc3}</p>
-            </div>
+  <section className="py-24 px-6 bg-[#120B07] relative z-20 border-y border-[#C5A880]/20">
+    <div className="max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="space-y-4 p-8 rounded-2xl bg-[#FDF8EF] border border-[#C5A880]/50 shadow-xl text-[#2A1B12] group">
+          <div className="w-16 h-16 mx-auto rounded-full bg-[#6a332d]/10 flex items-center justify-center text-[#6a332d] group-hover:bg-[#6a332d] group-hover:text-white transition-colors duration-500 border border-[#6a332d]/20">
+            <BookOpen className="w-8 h-8" />
           </div>
+          <h3 className="text-2xl font-bold text-[#2A1B12]">{tx.pillarsTitle1}</h3>
+          <p className="text-[#4A3525] leading-relaxed">{tx.pillarsDesc1}</p>
         </div>
-      </section>
+
+        <div className="space-y-4 p-8 rounded-2xl bg-[#FDF8EF] border border-[#C5A880]/50 shadow-xl text-[#2A1B12] group">
+          <div className="w-16 h-16 mx-auto rounded-full bg-[#6a332d]/10 flex items-center justify-center text-[#6a332d] group-hover:bg-[#6a332d] group-hover:text-white transition-colors duration-500 border border-[#6a332d]/20">
+            <Compass className="w-8 h-8" />
+          </div>
+          <h3 className="text-2xl font-bold text-[#2A1B12]">{tx.pillarsTitle2}</h3>
+          <p className="text-[#4A3525] leading-relaxed">{tx.pillarsDesc2}</p>
+        </div>
+
+        <div className="space-y-4 p-8 rounded-2xl bg-[#FDF8EF] border border-[#C5A880]/50 shadow-xl text-[#2A1B12] group">
+          <div className="w-16 h-16 mx-auto rounded-full bg-[#6a332d]/10 flex items-center justify-center text-[#6a332d] group-hover:bg-[#6a332d] group-hover:text-white transition-colors duration-500 border border-[#6a332d]/20">
+            <Sparkles className="w-8 h-8" />
+          </div>
+          <h3 className="text-2xl font-bold text-[#2A1B12]">{tx.pillarsTitle3}</h3>
+          <p className="text-[#4A3525] leading-relaxed">{tx.pillarsDesc3}</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
       {/* Quote Section */}
       <section className="py-32 px-6 bg-background relative">
@@ -278,103 +282,103 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
       </section>
 
       {/* Waitlist Section */}
-      <section
-        id="waitlist"
-        className="py-32 px-6 bg-card border-t border-border relative overflow-hidden"
-      >
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
-        </div>
+  <section
+    id="waitlist"
+    className="py-28 px-6 bg-[#120B07] border-t border-[#C5A880]/20 relative overflow-hidden"
+  >
+    <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#D4AF37]/5 rounded-full blur-3xl" />
+    </div>
 
-        <div className="max-w-md mx-auto relative z-10 bg-background/60 p-8 md:p-12 rounded-2xl border border-primary/20 backdrop-blur-md shadow-2xl">
-          <div className="text-center space-y-4 mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              {tx.waitlistTitle}
-            </h2>
-            <p className="text-muted-foreground">{tx.waitlistBlurb}</p>
-            {countData && (
-              <p className="text-sm font-medium text-primary">
-                {countData.count.toLocaleString()}{" "}
-                {countData.count === 1 ? tx.waitlistCount1 : tx.waitlistCountN}
-              </p>
-            )}
-          </div>
+    <div className="max-w-md mx-auto relative z-10 bg-[#F5E8D0] p-8 md:p-12 rounded-2xl border-2 border-[#D4AF37]/50 shadow-2xl text-[#2A1B12]">
+      <div className="text-center space-y-4 mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#2A1B12]">
+          {tx.waitlistTitle}
+        </h2>
+        <p className="text-[#4A3525]">{tx.waitlistBlurb}</p>
+        {countData && (
+          <p className="text-sm font-semibold text-[#6a332d]">
+            {countData.count.toLocaleString()}{" "}
+            {countData.count === 1 ? tx.waitlistCount1 : tx.waitlistCountN}
+          </p>
+        )}
+      </div>
 
-          {hasJoined ? (
-            <div className="text-center space-y-4 p-8 rounded-xl bg-primary/10 border border-primary/20 animate-in zoom-in duration-500">
-              <Sparkles className="w-12 h-12 mx-auto text-primary" />
-              <h3 className="text-2xl font-serif text-foreground">{tx.successTitle}</h3>
-              <p className="text-muted-foreground">{tx.successBody}</p>
-            </div>
-          ) : (
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          data-testid="input-name"
-                          placeholder={tx.placeholderName}
-                          className="h-14 bg-muted border-border text-foreground placeholder:text-muted-foreground focus-visible:ring-primary"
-                          {...field}
-                          disabled={joinWaitlist.isPending}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          data-testid="input-email"
-                          placeholder={tx.placeholderEmail}
-                          className="h-14 bg-muted border-border text-foreground placeholder:text-muted-foreground focus-visible:ring-primary"
-                          {...field}
-                          disabled={joinWaitlist.isPending}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="country"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <CountryCombobox
-                          value={field.value}
-                          onChange={field.onChange}
-                          disabled={joinWaitlist.isPending}
-                          placeholder={tx.placeholderCountry}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <Button
-                  data-testid="button-submit-waitlist"
-                  type="submit"
-                  className="w-full h-14 text-lg bg-primary hover:bg-primary/90 text-primary-foreground font-medium rounded-xl shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-[1.02]"
-                  disabled={joinWaitlist.isPending}
-                >
-                  {joinWaitlist.isPending ? tx.submitPending : tx.submitIdle}
-                </Button>
-              </form>
-            </Form>
-          )}
+      {hasJoined ? (
+        <div className="text-center space-y-4 p-8 rounded-xl bg-[#6a332d]/10 border border-[#6a332d]/30 animate-in zoom-in duration-500">
+          <Sparkles className="w-12 h-12 mx-auto text-[#6a332d]" />
+          <h3 className="text-2xl font-serif text-[#2A1B12]">{tx.successTitle}</h3>
+          <p className="text-[#4A3525]">{tx.successBody}</p>
         </div>
-      </section>
+      ) : (
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <FormField
+              control={form.control}
+              name="name"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Input
+                      data-testid="input-name"
+                      placeholder={tx.placeholderName}
+                      className="h-14 bg-[#FDF8EF] border-[#C5A880] text-[#2A1B12] placeholder:text-[#8C7A6B] focus-visible:ring-[#6a332d]"
+                      {...field}
+                      disabled={joinWaitlist.isPending}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Input
+                      data-testid="input-email"
+                      placeholder={tx.placeholderEmail}
+                      className="h-14 bg-[#FDF8EF] border-[#C5A880] text-[#2A1B12] placeholder:text-[#8C7A6B] focus-visible:ring-[#6a332d]"
+                      {...field}
+                      disabled={joinWaitlist.isPending}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="country"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <CountryCombobox
+                      value={field.value}
+                      onChange={field.onChange}
+                      disabled={joinWaitlist.isPending}
+                      placeholder={tx.placeholderCountry}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <Button
+              data-testid="button-submit-waitlist"
+              type="submit"
+              className="w-full h-14 text-lg bg-[#6a332d] hover:bg-[#582a25] text-[#F5E6C8] font-medium rounded-xl shadow-lg shadow-[#6a332d]/30 transition-all duration-300 hover:scale-[1.02]"
+              disabled={joinWaitlist.isPending}
+            >
+              {joinWaitlist.isPending ? tx.submitPending : tx.submitIdle}
+            </Button>
+          </form>
+        </Form>
+      )}
+    </div>
+  </section>
 
       {/* Footer */}
       <footer className="py-10 px-6 border-t border-border">
