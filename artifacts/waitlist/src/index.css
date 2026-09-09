@@ -75,33 +75,37 @@
   --elevate-1: rgba(255,255,255, .03);
   --elevate-2: rgba(255,255,255, .07);
 
-  /* Background: deep warm near-black (like the dark courtyard shadows) */
-  --background: 28 40% 7%;
-  --foreground: 40 55% 90%;
-  --border: 32 30% 18%;
-  --input: 32 28% 22%;
-  --ring: 6 40% 30%;
+  /* Page Background: Warm Parchment (#F9F3EB) */
+    --background: 36 43% 95%;
+  /* Body & Heading Text: Deep Espresso Ink (#2A1B12) */
+    --foreground: 22 38% 12%;
+ /* Borders, Inputs & Focus Rings */
+    --border: 35 38% 64%;
+    --input: 35 38% 64%;
+    --ring: 6 40% 30%;
 
-  /* Cards: slightly lighter warm dark */
-  --card: 28 35% 11%;
-  --card-foreground: 40 55% 90%;
-  --card-border: 32 30% 18%;
+  /* Cards & Containers: Light Cream Scroll (#FDF8EF) */
+    --card: 38 67% 96%;
+    --card-foreground: 22 38% 12%;
+    --card-border: 35 38% 64%;
 
-  --popover: 28 35% 11%;
-  --popover-foreground: 40 55% 90%;
+  /* Popovers & Dropdowns */
+    --popover: 38 67% 96%;
+    --popover-foreground: 22 38% 12%;
   --popover-border: 32 30% 18%;
 
-  /* Primary: rich gold (the Hikma logo / owl colour) */
-  --primary: 6 40% 30%;
-  --primary-foreground: 40 55% 90%;
+  /* Primary Accent Color: Burgundy (#6a332d) */
+    --primary: 6 40% 30%;
+    /* Primary Button Text: Warm Parchment (#F5E6C8) */
+    --primary-foreground: 38 70% 88%;
 
-  /* Secondary: teal (scholar's robe accent) */
-  --secondary: 178 45% 35%;
-  --secondary-foreground: 40 55% 90%;
+   /* Secondary Accent: Deep Gold */
+    --secondary: 42 85% 40%;
+    --secondary-foreground: 38 70% 88%;
 
-  /* Muted: warm mid-brown */
-  --muted: 30 28% 14%;
-  --muted-foreground: 36 25% 60%;
+ /* Muted Elements & Secondary Text */
+    --muted: 36 50% 88%;
+    --muted-foreground: 24 33% 28%;
 
   /* Accent: deeper amber-gold */
   --accent: 38 80% 42%;
@@ -155,28 +159,38 @@
   --elevate-1: rgba(255,255,255, .03);
   --elevate-2: rgba(255,255,255, .07);
 
-  --background: 28 40% 7%;
-  --foreground: 40 55% 90%;
-  --border: 32 30% 18%;
-  --input: 32 28% 22%;
-  --ring: 42 85% 52%;
+   /* Page Background: Warm Parchment (#F9F3EB) */
+    --background: 36 43% 95%;
+    
+    /* Body & Heading Text: Deep Espresso Ink (#2A1B12) */
+    --foreground: 22 38% 12%;
+    /* Borders, Inputs & Focus Rings */
+    --border: 35 38% 64%;
+    --input: 35 38% 64%;
+    --ring: 6 40% 30%;
 
-  --card: 28 35% 11%;
-  --card-foreground: 40 55% 90%;
-  --card-border: 32 30% 18%;
+  /* Cards & Containers: Light Cream Scroll (#FDF8EF) */
+    --card: 38 67% 96%;
+    --card-foreground: 22 38% 12%;
+    --card-border: 35 38% 64%;
 
-  --popover: 28 35% 11%;
-  --popover-foreground: 40 55% 90%;
-  --popover-border: 32 30% 18%;
+  /* Popovers & Dropdowns */
+    --popover: 38 67% 96%;
+    --popover-foreground: 22 38% 12%;
 
-  --primary: 42 85% 52%;
-  --primary-foreground: 28 40% 7%;
+  /* Primary Accent Color: Burgundy (#6a332d) */
+    --primary: 6 40% 30%;
+    
+    /* Primary Button Text: Warm Parchment (#F5E6C8) */
+    --primary-foreground: 38 70% 88%;
 
-  --secondary: 178 45% 35%;
-  --secondary-foreground: 40 55% 90%;
+   /* Secondary Accent: Deep Gold */
+    --secondary: 42 85% 40%;
+    --secondary-foreground: 38 70% 88%;
 
-  --muted: 30 28% 14%;
-  --muted-foreground: 36 25% 60%;
+  /* Muted Elements & Secondary Text */
+    --muted: 36 50% 88%;
+    --muted-foreground: 24 33% 28%;
 
   --accent: 38 80% 42%;
   --accent-foreground: 40 55% 90%;
