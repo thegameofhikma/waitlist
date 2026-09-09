@@ -19,7 +19,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-import boxArt from "@assets/IMG-20260126-WA0001_1779350196491.jpg";
+import boxArt from "@assets/box-art-en.jpg";
 import bgImage from "@assets/map graphic.jpg";
 import dividerGraphic from "@assets/baghdad-icon-transparent.png";
 import { CountryCombobox } from "@/components/country-combobox";
@@ -138,10 +138,13 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto text-center space-y-8 px-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          <div className="mx-auto w-56 md:w-72 rounded-xl overflow-hidden border-2 border-primary/60 shadow-2xl shadow-black/80 ring-1 ring-primary/20">
-            <img src={boxArt} alt="Hikma game box" className="w-full h-full object-cover" />
-          </div>
+        <div className="mx-auto w-56 md:w-72 rounded-xl overflow-hidden border-2 border-primary/60 shadow-2xl shadow-black/80 ring-1 ring-primary/20">
+          <img 
+            src={isAr ? "/box-art-ar.jpg" : "/box-art-en.jpg"} 
+            alt={isAr ? "صندوق لعبة حكمة" : "Hikma game box"} 
+            className="w-full h-full object-cover" 
+          />
+        </div>
 
           <h1
             className="text-5xl md:text-7xl font-bold text-foreground leading-[1.1] drop-shadow-lg"
