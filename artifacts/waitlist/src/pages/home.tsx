@@ -130,53 +130,66 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-8 flex flex-col items-center py-20">
-        {/* Localized Box Art Image */}
-        <div className="mx-auto w-56 md:w-72 rounded-xl overflow-hidden border-2 border-primary/60 shadow-2xl shadow-black/80 ring-1 ring-primary/20">
-          <img 
-            src={isAr ? boxArtAr : boxArt} 
-            alt={isAr ? "صندوق لعبة حكمة" : "Hikma game box"} 
-            className="w-full h-full object-cover" 
+      <section className="relative w-full min-h-[100vh] flex items-center justify-center overflow-hidden bg-background">
+        {/* Background Map Image */}
+        <div className="absolute inset-0 w-full h-full pointer-events-none">
+          <img
+            src={bgImage}
+            alt="Hikma board game map background"
+            className="w-full h-full object-cover object-top opacity-30 mix-blend-multiply"
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/70 to-background" />
         </div>
 
-        <h1
-          className="text-5xl md:text-7xl font-bold text-foreground leading-[1.1] drop-shadow-lg"
-          style={{ fontFamily: "'Cinzel', serif", fontWeight: 900 }}
-        >
-          {tx.heroTitle1}{" "}
-          <span className="text-[#D4AF37] italic drop-shadow-[0_2px_10px_rgba(212,175,55,0.3)]">
-            {tx.heroTitle2}
-          </span>
-        </h1>
+        {/* Centered Hero Content */}
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-8 flex flex-col items-center py-20">
+          {/* Localized Box Art Image */}
+          <div className="mx-auto w-56 md:w-72 rounded-xl overflow-hidden border-2 border-primary/60 shadow-2xl shadow-black/80 ring-1 ring-primary/20">
+            <img 
+              src={isAr ? boxArtAr : boxArt} 
+              alt={isAr ? "صندوق لعبة حكمة" : "Hikma game box"} 
+              className="w-full h-full object-cover" 
+            />
+          </div>
 
-        <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto font-light leading-relaxed drop-shadow">
-          {tx.heroSubtitle}
-        </p>
-
-        <div className="pt-4">
-          <Button
-            data-testid="button-join-ledger"
-            size="lg"
-            className="h-14 px-8 text-lg rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 shadow-lg shadow-primary/30"
-            onClick={() => {
-              document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
-            }}
+          <h1
+            className="text-5xl md:text-7xl font-bold text-foreground leading-[1.1] drop-shadow-lg"
+            style={{ fontFamily: "'Cinzel', serif", fontWeight: 900 }}
           >
-            {isAr ? (
-              <>
-                <ArrowRight className="mr-2 w-5 h-5 rotate-180" />
-                {tx.heroCta}
-              </>
-            ) : (
-              <>
-                {tx.heroCta}
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </>
-            )}
-          </Button>
+            {tx.heroTitle1}{" "}
+            <span className="text-[#D4AF37] italic drop-shadow-[0_2px_10px_rgba(212,175,55,0.3)]">
+              {tx.heroTitle2}
+            </span>
+          </h1>
+
+          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto font-light leading-relaxed drop-shadow">
+            {tx.heroSubtitle}
+          </p>
+
+          <div className="pt-4">
+            <Button
+              data-testid="button-join-ledger"
+              size="lg"
+              className="h-14 px-8 text-lg rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 shadow-lg shadow-primary/30"
+              onClick={() => {
+                document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              {isAr ? (
+                <>
+                  <ArrowRight className="mr-2 w-5 h-5 rotate-180" />
+                  {tx.heroCta}
+                </>
+              ) : (
+                <>
+                  {tx.heroCta}
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </>
+              )}
+            </Button>
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* Game Stats Section */}
       <section className="py-16 px-6 bg-background border-b border-border">
