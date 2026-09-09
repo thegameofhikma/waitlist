@@ -64,26 +64,26 @@
   --elevate-1: rgba(255,255,255, .03); 
   --elevate-2: rgba(255,255,255, .07);
 
-  /* Page Background: Warm Parchment (#F9F3EB) */
-  --background: 36 43% 95%;
+  /* Page Background: Rich Aged Parchment (#dbc7b0) */
+  --background: 32 37% 77%;
 
   /* Body & Heading Text: Deep Espresso Ink (#2A1B12) */
   --foreground: 22 38% 12%;
 
   /* Borders, Inputs & Focus Rings */
-  --border: 35 38% 64%;
-  --input: 35 38% 64%;
+  --border: 32 25% 60%;
+  --input: 32 25% 60%;
   --ring: 6 40% 30%;
 
-  /* Cards & Containers: Light Cream Scroll (#FDF8EF) */
-  --card: 38 67% 96%;
+  /* Cards & Containers: Soft Vellum Cream (#e8d8c5) */
+  --card: 33 40% 84%;
   --card-foreground: 22 38% 12%;
-  --card-border: 35 38% 64%;
+  --card-border: 32 25% 60%;
 
   /* Popovers & Dropdowns */
-  --popover: 38 67% 96%;
+  --popover: 33 40% 84%;
   --popover-foreground: 22 38% 12%;
-  --popover-border: 32 30% 18%;
+  --popover-border: 32 25% 60%;
 
   /* Primary Accent Color: Burgundy (#6a332d) */
   --primary: 6 40% 30%;
@@ -94,8 +94,8 @@
   --secondary-foreground: 38 70% 88%;
 
   /* Muted Elements & Secondary Text */
-  --muted: 36 50% 88%;
-  --muted-foreground: 24 33% 28%;
+  --muted: 32 30% 70%;
+  --muted-foreground: 24 33% 25%;
 
   /* Accent: Deeper Amber-Gold */
   --accent: 38 80% 42%;
@@ -121,14 +121,14 @@
   --shadow-xl: 0px 16px 32px 0px hsl(28 40% 3% / 0.8), 0px 8px 16px -1px hsl(28 40% 3% / 0.6);
   --shadow-2xl: 0px 24px 48px 0px hsl(28 40% 3% / 0.9);
 
-  --sidebar: 28 35% 11%;
-  --sidebar-foreground: 40 55% 90%;
-  --sidebar-border: 32 30% 18%;
-  --sidebar-primary: 42 85% 52%;
-  --sidebar-primary-foreground: 28 40% 7%;
-  --sidebar-accent: 178 45% 35%;
-  --sidebar-accent-foreground: 40 55% 90%;
-  --sidebar-ring: 42 85% 52%;
+  --sidebar: 32 30% 70%;
+  --sidebar-foreground: 22 38% 12%;
+  --sidebar-border: 32 25% 60%;
+  --sidebar-primary: 6 40% 30%;
+  --sidebar-primary-foreground: 38 70% 88%;
+  --sidebar-accent: 42 85% 40%;
+  --sidebar-accent-foreground: 38 70% 88%;
+  --sidebar-ring: 6 40% 30%;
 
   --sidebar-primary-border: hsl(var(--sidebar-primary));
   --sidebar-accent-border: hsl(var(--sidebar-accent));
