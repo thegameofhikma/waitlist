@@ -155,7 +155,10 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
         className="text-5xl md:text-7xl font-bold text-foreground leading-[1.1] drop-shadow-lg"
         style={{ fontFamily: "'Cinzel', serif", fontWeight: 900 }}
       >
-        {tx.heroTitle1} <span className="text-primary italic">{tx.heroTitle2}</span>
+        {tx.heroTitle1}{" "}
+        <span className="text-[#D4AF37] italic drop-shadow-[0_2px_10px_rgba(212,175,55,0.3)]">
+          {tx.heroTitle2}
+        </span>
       </h1>
 
       <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto font-light leading-relaxed drop-shadow">
