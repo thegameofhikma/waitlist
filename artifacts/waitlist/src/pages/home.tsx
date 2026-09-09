@@ -157,7 +157,7 @@ export default function Home() {
             style={{ fontFamily: "'Cinzel', serif", fontWeight: 900 }}
           >
             {tx.heroTitle1}{" "}
-            <span className="text-[#8C5A1E] italic drop-shadow-[0_2px_10px_rgba(212,175,55,0.3)]">
+            <span className="text-[#8C5A1E] drop-shadow-[0_2px_10px_rgba(212,175,55,0.3)]">
               {tx.heroTitle2}
             </span>
           </h1>
@@ -219,7 +219,7 @@ export default function Home() {
       </section>
 
       {/* Pillars Section */}
-      <section className="py-20 px-6 bg-card relative z-20 border-y border-border">
+      <section className="py-16 px-6 bg-card relative z-20 border-y border-border">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div className="space-y-4 p-6 group">
@@ -248,7 +248,7 @@ export default function Home() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-20 px-6 bg-background relative">
+      <section className="py-16 px-6 bg-background relative">
         <div className="mx-auto w-56 md:w-72 h-auto mb-16 opacity-95 filter drop-shadow-[0_6px_10px_rgba(0,0,0,0.6)]">
           <img 
             src={dividerGraphic} 
@@ -271,7 +271,7 @@ export default function Home() {
       {/* Waitlist Section */}
       <section
         id="waitlist"
-        className="py-20 px-6 bg-card border-t border-border relative overflow-hidden"
+        className="py-16 px-6 bg-card border-t border-border relative overflow-hidden"
       >
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
