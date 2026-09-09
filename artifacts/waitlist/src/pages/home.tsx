@@ -19,7 +19,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-import boxArt from "@assets/box-art-en.jpg";
+import boxArt from "@assets/box-art-en.JPG";
+import boxArtAr from "@assets/box-art-ar.JPG";
 import bgImage from "@assets/map graphic.jpg";
 import dividerGraphic from "@assets/baghdad-icon-transparent.png";
 import { CountryCombobox } from "@/components/country-combobox";
@@ -140,7 +141,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
 
         <div className="mx-auto w-56 md:w-72 rounded-xl overflow-hidden border-2 border-primary/60 shadow-2xl shadow-black/80 ring-1 ring-primary/20">
           <img 
-            src={isAr ? "/box-art-ar.jpg" : "/box-art-en.jpg"} 
+            src={isAr ? boxArtAr : boxArt} 
             alt={isAr ? "صندوق لعبة حكمة" : "Hikma game box"} 
             className="w-full h-full object-cover" 
           />
