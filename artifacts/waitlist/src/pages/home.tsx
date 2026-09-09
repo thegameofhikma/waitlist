@@ -128,37 +128,41 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
         </Button>
       </div>
 
-      {/* Hero Section */}
-      <section className="relative w-full min-h-[100vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 w-full h-full">
-          <img
-            src={bgImage}
-            alt="Hikma board game box art"
-            className="w-full h-full object-cover object-top"
-          />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
-             </div>
+{/* Hero Section */}
+  <section className="relative w-full min-h-[100vh] flex items-center justify-center overflow-hidden">
+    {/* Background Map Graphic */}
+    <div className="absolute inset-0 w-full h-full">
+      <img
+        src={bgImage}
+        alt="Hikma board game map background"
+        className="w-full h-full object-cover object-top"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+    </div>
 
-          <div className="mx-auto w-56 md:w-72 rounded-xl overflow-hidden border-2 border-primary/60 shadow-2xl shadow-black/80 ring-1 ring-primary/20">
-            <img 
-              src={isAr ? boxArtAr : boxArt} 
-              alt={isAr ? "صندوق لعبة حكمة" : "Hikma game box"} 
-              className="w-full h-full object-cover" 
-            />
-          </div>
+    {/* Centered Vertical Column Wrapper */}
+    <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-8 flex flex-col items-center py-20">
+      {/* Localized Box Art Image */}
+      <div className="mx-auto w-56 md:w-72 rounded-xl overflow-hidden border-2 border-primary/60 shadow-2xl shadow-black/80 ring-1 ring-primary/20">
+        <img 
+          src={isAr ? boxArtAr : boxArt} 
+          alt={isAr ? "صندوق لعبة حكمة" : "Hikma game box"} 
+          className="w-full h-full object-cover" 
+        />
+      </div>
 
-          <h1
-            className="text-5xl md:text-7xl font-bold text-foreground leading-[1.1] drop-shadow-lg"
-            style={{ fontFamily: "'Cinzel', serif", fontWeight: 900 }}
-          >
-            {tx.heroTitle1} <span className="text-primary italic">{tx.heroTitle2}</span>
-          </h1>
+      <h1
+        className="text-5xl md:text-7xl font-bold text-foreground leading-[1.1] drop-shadow-lg"
+        style={{ fontFamily: "'Cinzel', serif", fontWeight: 900 }}
+      >
+        {tx.heroTitle1} <span className="text-primary italic">{tx.heroTitle2}</span>
+      </h1>
 
-          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto font-light leading-relaxed drop-shadow">
-            {tx.heroSubtitle}
-          </p>
+      <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto font-light leading-relaxed drop-shadow">
+        {tx.heroSubtitle}
+      </p>
 
-          <div className="pt-4">
+      <div className="pt-4">
         <Button
           data-testid="button-join-ledger"
           size="lg"
@@ -180,6 +184,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
           )}
         </Button>
       </div>
+    </div>
   </section>
 
   {/* Game Stats Section */}
