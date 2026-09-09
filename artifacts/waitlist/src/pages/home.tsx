@@ -136,16 +136,16 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
             alt="Hikma board game box art"
             className="w-full h-full object-cover object-top"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
-        </div>
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+             </div>
 
-        <div className="mx-auto w-56 md:w-72 rounded-xl overflow-hidden border-2 border-primary/60 shadow-2xl shadow-black/80 ring-1 ring-primary/20">
-          <img 
-            src={isAr ? boxArtAr : boxArt} 
-            alt={isAr ? "صندوق لعبة حكمة" : "Hikma game box"} 
-            className="w-full h-full object-cover" 
-          />
-        </div>
+          <div className="mx-auto w-56 md:w-72 rounded-xl overflow-hidden border-2 border-primary/60 shadow-2xl shadow-black/80 ring-1 ring-primary/20">
+            <img 
+              src={isAr ? boxArtAr : boxArt} 
+              alt={isAr ? "صندوق لعبة حكمة" : "Hikma game box"} 
+              className="w-full h-full object-cover" 
+            />
+          </div>
 
           <h1
             className="text-5xl md:text-7xl font-bold text-foreground leading-[1.1] drop-shadow-lg"
@@ -180,6 +180,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
               )}
             </Button>
           </div>
+        </div>
       </section>
 
       {/* Game Stats Section */}
