@@ -248,8 +248,9 @@ export default function Home() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-16 px-6 bg-background relative">
-        <div className="mx-auto w-56 md:w-72 h-auto mb-16 opacity-95 filter drop-shadow-[0_6px_10px_rgba(0,0,0,0.6)]">
+      <section className="py-20 px-6 bg-background relative text-center">
+        {/* Baghdad Icon */}
+        <div className="mx-auto w-56 md:w-72 h-auto mb-10 opacity-95 filter drop-shadow-[0_6px_10px_rgba(0,0,0,0.6)]">
           <img 
             src={dividerGraphic} 
             alt="Decorative Baghdad icon" 
@@ -257,7 +258,8 @@ export default function Home() {
           />
         </div>
 
-          <div className="flex items-center justify-center gap-6 max-w-sm mx-auto mb-12 opacity-75">
+        {/* Decorative Burgundy Divider */}
+        <div className="flex items-center justify-center gap-6 max-w-sm mx-auto mb-10 opacity-75">
           <div className="h-[2px] bg-gradient-to-r from-transparent to-[#6a332d] flex-1" />
           <div className="w-4 h-4 rotate-45 border-2 border-[#6a332d] bg-[#6a332d]/10 flex items-center justify-center" />
           <div className="w-6 h-6 rotate-45 border-2 border-[#6a332d] flex items-center justify-center bg-[#6a332d]/20">
@@ -265,6 +267,23 @@ export default function Home() {
           </div>
           <div className="w-4 h-4 rotate-45 border-2 border-[#6a332d] bg-[#6a332d]/10 flex items-center justify-center" />
           <div className="h-[2px] bg-gradient-to-l from-transparent to-[#6a332d] flex-1" />
+        </div>
+
+        {/* Baghdad Quote */}
+        <div className="max-w-2xl mx-auto space-y-4">
+          <blockquote 
+            className="text-xl md:text-2xl text-foreground italic leading-relaxed"
+            style={{ fontFamily: "'Cinzel', serif" }}
+          >
+            {isAr ? (
+              "«إنها قطب الدنيا، وسرة الأرض، ومقربة الأنام... ما من عالم ولا عاقل إلا ويرنو إليها ويؤثر السكنى فيها.»"
+            ) : (
+              "“It is the pole of the world, the navel of the earth, and the City of Peace. There is no one possessing knowledge or insight who does not look toward it and desire to dwell within it.”"
+            )}
+          </blockquote>
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+            {isAr ? "— ابن الفقيه الهمذاني (بغداد)" : "— Ibn al-Faqih al-Hamadhani (on Baghdad)"}
+          </p>
         </div>
       </section>
 
